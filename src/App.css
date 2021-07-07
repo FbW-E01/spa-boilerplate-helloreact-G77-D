@@ -1,0 +1,45 @@
+
+.sidebar {
+  grid-area: sidebar;
+  background: cyan ;
+  height: 100px;
+}
+
+.main {
+  grid-area: content;
+  position: relative;
+  background: light green  ;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas:
+    "header  header  header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+  }
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 150%;
+}
+
+header,
+footer {
+  background-color: pink;
+}
